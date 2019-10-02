@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="All The-Internet Tests">
 
-    <!--<test name="<String Tests">-->
-        <!--<classes>-->
-            <!--<class name="tests.<test_file>"/>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
 
 </suite>
