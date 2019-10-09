@@ -8,9 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import waits.WaitForElement;
 
-import java.util.Arrays;
-import java.util.Set;
-
 public class LoginPage extends BasePage {
 
     @FindBy(name = "username")
@@ -64,11 +61,4 @@ public class LoginPage extends BasePage {
         AssertWebElement.assertThat(unsuccessfulMessage).isDisplayed();
         return this;
     }
-
-    // checks what type of logs can be get from a browser
-    public void GetAvailableLogs() {
-        Set<String> availableLogTypes = DriverManager.getWebDriver().manage().logs().getAvailableLogTypes();
-        System.out.println(Arrays.toString(availableLogTypes.toArray()));
-    }
-
 }
